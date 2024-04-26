@@ -1,0 +1,19 @@
+
+fn makeAdder (offset) {
+  fn add (x, y)  {
+    x + y + offset
+  }
+  add
+}
+const adder = makeAdder(0);
+
+fn increase_depth (depth){
+  fn increase(x,y){
+    x + y + depth
+  }
+  increase
+}
+const total = increase_depth(10)
+
+print(increase(100,100))
+print(adder(12,5))
